@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+header {
+	position: absolute;
+	width: 100%;
+	height: 13.2vw;
+	top: 0;
+	background: hsla(0,0%,79%,0.5);
+	box-shadow: 0vw -.4vw 5vw;
+}
+#hero_image{
+	background-image: url(../../../longview_church_of_truth/assets/images/pictures/home_1.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 100vh;
+}
+#header_background{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#cotl_logo{
+	text-align: center
+}
+#logo_text{
+	font-size: .9em;
+	font-family: "brandon-grotesque", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
+}
+#logo_of{
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-style: italic;
+	font-size: 1.3em
+}
+#navigation{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 5vw;
+}
+#navigation_list{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	font-size: .8em;
+	list-style-type: none;
+}
+#navigation_list li {
+	font-family: montserrat;
+	font-style: normal;
+	font-weight: 500;
+	color: #E9E9E9;
+}
+#home{}
+#sermons{}
+#history{}
+#contact{}
+#about{}
