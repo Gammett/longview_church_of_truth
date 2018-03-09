@@ -2,13 +2,34 @@
 	padding: 0;
 	margin: 0;
 }
+html {
+	
+}
+body {
+	color: #cdcdcd;
+}
+nav a{
+	font-family: "Avenir Next", "Avenir", sans-serif;
+	text-decoration: none;
+	color: hsla(0,0%,14%,1.00);
+	transition: color 0.3s ease;
+}
+nav a:hover{
+	color: hsla(357,82%,39%,1.00);
+}
 header {
 	position: absolute;
 	width: 100%;
-	height: 13.2vw;
+	height: 24vw;
 	top: 0;
-	background: hsla(0,0%,79%,0.5);
+	background: hsla(0,0%,100%,1.00);
 	box-shadow: 0vw -.4vw 5vw;
+}
+[role="navigation"]{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: 0;
 }
 #hero_image{
 	background-image: url(../../../longview_church_of_truth/assets/images/pictures/home_1.png);
@@ -20,42 +41,141 @@ header {
 #header_background{
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 100%; 
 }
-#cotl_logo{
-	text-align: center
-}
-#logo_text{
-	font-size: .9em;
-	font-family: "brandon-grotesque", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	color: white;
-}
-#logo_of{
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-	font-style: italic;
-	font-size: 1.3em
-}
-#navigation{
+#cotl_logo{}
+#cotl_logo_1{
 	position: absolute;
-	bottom: 0;
+	margin: .3%;
+	height: 99.4%;
+}
+/*
+start_quote
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ end_quote
+a:hover{
+  color: tomato;
+}
+
+#menu_toggle{
+	display: block;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	width: 6%;
+	height: 20%;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+	z-index: 4;
+}
+
+#menu_toggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;  
+  opacity: 0; start_quote hide this end_quote
+  z-index: 2; start_quote and place it over the hamburger end_quote
+  
+  -webkit-touch-callout: none;
+}
+
+start_quote
+ * Just a quick hamburger
+ end_quote
+#menu_toggle span{
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+
+	background: #cdcdcd;
+	border-radius: 3px;
+
+	z-index: 1;
+
+	transform-origin: 4px 0px;
+
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	            opacity 0.55s ease;
+}
+
+#menu_toggle span:first-child{
+	transform-origin: 0% 0%;
+}
+
+#menu_toggle span:nth-last-child(2){
+	transform-origin: 0% 100%;
+}
+
+start_quote 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ end_quote
+#menu_toggle input:checked ~ span{
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+}
+
+start_quote
+ * But let's hide the middle one.
+ end_quote
+#menu_toggle input:checked ~ span:nth-last-child(3){
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+start_quote
+ * Ohyeah and the last one should go the other direction
+ end_quote
+#menu_toggle input:checked ~ span:nth-last-child(2){
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+start_quote
+ * Make this absolute positioned
+ * at the top left of the screen
+ end_quote
+#nav_menu{
+	position: absolute;
 	width: 100%;
-	height: 5vw;
-}
-#navigation_list{
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-	font-size: .8em;
+	top: 0%;
+	padding: 50px;
+	padding-top: 125px;
+
+	background: #ededed;
 	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	start_quote to stop flickering of text in safari end_quote
+
+	transform-origin: 0% 0%;
+	transform: translate(0%, 100%);
+
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-#navigation_list li {
-	font-family: montserrat;
-	font-style: normal;
-	font-weight: 500;
-	color: #E9E9E9;
+
+#nav_menu li{
+	padding: 10px 0;
+	font-size: 22px;
 }
-#home{}
-#sermons{}
-#history{}
-#contact{}
-#about{}
+
+start_quote
+ * And let's slide it in from the left
+ end_quote
+#menu_toggle input:checked ~ ul{
+	transform: none;
+}
