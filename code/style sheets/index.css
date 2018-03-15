@@ -2,60 +2,72 @@
 	padding: 0;
 	margin: 0;
 }
-header {
-	position: absolute;
+html{
+
+}
+body{
+	color: #cdcdcd;
+}
+body, html{
+	height: 100%;
+}
+header{
+	position: relative;
 	width: 100%;
-	height: 13.2vw;
+	height: 15vh;
 	top: 0;
-	background: hsla(0,0%,79%,0.5);
+	background: hsla(0,0%,100%,1.00);
 	box-shadow: 0vw -.4vw 5vw;
 }
-#hero_image{
-	background-image: url(../../../longview_church_of_truth/assets/images/pictures/home_1.png);
-	background-size: cover;
-	background-position: center;
+nav{
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	right: 0;
+}
+nav a{
+	font-family: "Avenir Next", "Avenir", sans-serif;
+	text-decoration: none;
+	color: hsla(0,0%,14%,1.00);
+	transition: color 0.3s ease;
+}
+main {
+	all: unset;
 	position: relative;
-	height: 100vh;
+	width: 100vw;
 }
 #header_background{
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 100%; 
 }
 #cotl_logo{
-	text-align: center
-}
-#logo_text{
-	font-size: .9em;
-	font-family: "brandon-grotesque", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	color: white;
-}
-#logo_of{
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-	font-style: italic;
-	font-size: 1.3em
-}
-#navigation{
 	position: absolute;
-	bottom: 0;
+	height: 90%;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+}
+#hero_image_1{
+	position: relative;
+	background: url(../../../longview_church_of_truth/assets/images/pictures/home_1.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 95vh;
+}
+#divider_1{
+	position: relative;
 	width: 100%;
-	height: 5vw;
+	height: auto;
+	top: 0vh;
 }
-#navigation_list{
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-	font-size: .8em;
-	list-style-type: none;
+#divider_1_block{
+	position: absolute;
+	background: red;
+	width: 100%;
+	height: 40vw;
+	top: -5.8vw;
+	-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+	clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
 }
-#navigation_list li {
-	font-family: montserrat;
-	font-style: normal;
-	font-weight: 500;
-	color: #E9E9E9;
-}
-#home{}
-#sermons{}
-#history{}
-#contact{}
-#about{}
