@@ -75,13 +75,17 @@ main {
 	height: 93vh;
 }
 #hero_1_text{
+	display: block;
 	position: absolute;
-	top: 50%;
-	transform: translateY(50%);
+	padding: 2%;
+	top: 60%;
+	transform: translateY(-50%);
 	right: 50%;
 	transform: translateX(50%);
-	background:hsla(0,0%,100%,0.60);
-	color: hsla(0,0%,12%,1.00)
+	background:hsla(0,0%,100%,0.40);
+	color: hsla(0,0%,100%,1.00);
+	font-family: "Avenir Next", "Avenir", sans-serif;
+	font-weight: 200;
 }
 /*First Divider*/
 #divider_1{
