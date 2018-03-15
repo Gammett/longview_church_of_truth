@@ -84,14 +84,21 @@ main {
 }
 #divider_1_block{
 	position: absolute;
-	background: red;
+	background: hsla(0,0%,100%,1.00);
 	width: 100%;
 	height: 40vw;
 	top: -5.8vw;
 	-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
 	clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
 }
-
+#divider_1_block > h2 {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	top: 40%;
+	transform: translateY(50%);
+	color: red;
+}
 /*Second Hero Image*/
 #hero_2{
 	background: url(../../assets/images/pictures/EPP_4736.jpg);
