@@ -1,7 +1,10 @@
+/*Blanket Padding & Margin Wipe*/
 *{
 	padding: 0;
 	margin: 0;
 }
+
+
 /*General Tags*/
 html{
 
@@ -15,7 +18,7 @@ body, html{
 header{
 	position: relative;
 	width: 100%;
-	height: 15vh;
+	height: 13vh;
 	top: 0;
 	background: hsla(0,0%,100%,1.00);
 	box-shadow: 0vw -.4vw 5vw;
@@ -37,15 +40,21 @@ main {
 	position: relative;
 	width: 100vw;
 }
+
+
 /*CLASSES*/
+
 /*Defines attributes for Front Page Hero Images*/
 .hero_image{
 	position: relative;
-	height: 95vh;
+	height: 100vh;
 	background-position: center;
 	background-size: contain;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
 	/*background-attachment: fixed;*/ 
 }
+
+
 /*IDs*/
 #header_background{
 	position: absolute;
@@ -56,14 +65,14 @@ main {
 	position: absolute;
 	height: 90%;
 	top: 50%;
-	left: 5%;
+	left: 3%;
 	transform: translateY(-50%);
 }
-
 /*First Hero Image*/
 #hero_1{
 	background: url(../../assets/images/pictures/CHU_9748.jpg);
 	background-position-x: 35%;
+	height: 93vh;
 }
 #hero_1_text{
 	position: absolute;
@@ -72,35 +81,35 @@ main {
 	right: 50%;
 	transform: translateX(50%);
 	background:hsla(0,0%,100%,0.60);
-	color: hsla(0,0%,12%,1.00)}
-
+	color: hsla(0,0%,12%,1.00)
+}
 /*First Divider*/
 #divider_1{
+	display: block;
 	position: relative;
-	width: 100%;
-	height: auto;
-	top: 0vh;
-	z-index: 12;
+
 }
+/*Shape of First Divider*/
 #divider_1_block{
 	position: absolute;
 	background: hsla(0,0%,100%,1.00);
 	width: 100%;
-	height: 40vw;
-	top: -5.8vw;
+	height: 40vh;
+	top: -5.6vh;
 	-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
 	clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+	z-index: 12;
 }
+/*First Divider - Header Style 2*/
 #divider_1_block > h2 {
 	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	top: 40%;
-	transform: translateY(50%);
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
 	color: red;
 }
 /*Second Hero Image*/
 #hero_2{
 	background: url(../../assets/images/pictures/EPP_4736.jpg);
-	top: 28vw;
+	top: 24.8vh;
 }
