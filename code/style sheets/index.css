@@ -50,7 +50,7 @@ main {
 	height: 100vh;
 	background-position: center;
 	background-size: contain;
-	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
+	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/ 
 }
 
