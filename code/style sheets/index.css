@@ -20,7 +20,7 @@ header{
 	width: 100%;
 	height: 13vh;
 	top: 0;
-	background: hsla(0,0%,100%,1.00);
+	background: hsla(210,20%,96%,1.00);
 	box-shadow: 0vw -.4vw 5vw;
 }
 nav{
@@ -39,21 +39,63 @@ main {
 	all: unset;
 	position: relative;
 	width: 100vw;
+	font-size: 2vh;
 }
 
 
 /*CLASSES*/
 
 /*Defines attributes for Front Page Hero Images*/
-.hero_image{
+div.hero_image{
 	position: relative;
-	height: 100vh;
-	background-position: center;
+	height: 110vh;
 	background-size: cover;
-	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/ 
+	background-attachment: fixed;
+	-webkit-filter: grayscale(60%) sepia(20%);
+	filter: grayscale(60%) sepia(20%);
 }
+.hero_text{
+	display: block;
+	position: absolute;
+	padding: 2%;
+	top: 60%;
+	right: 50%;
+	transform: translateY(-50%) translateX(50%);
+	background: hsla(244,16%,19%,.40);
+	-webkit-box-shadow: 26px 10px 300px 220px hsla(244,16%,19%,.40);
+	-moz-box-shadow: 26px 10px 300px 220px hsla(244,16%,19%,.40);
+	box-shadow: 26px 10px 300px 220px hsla(244,16%,19%,.40);
+	font-family: "Avenir Next", "Avenir", sans-serif;
+	font-weight: 200;
+	color: hsla(0,0%,100%,1.00);
+	text-align: center;
+}
+/*Divider*/
+.divider{
+	display: block;
+	position: relative;
 
+}
+/*Shape of Divider*/
+.divider_block{
+	position: absolute;
+	background: hsla(210,20%,96%,1.00);
+	width: 100%;
+	height: 40vh;
+	top: -5.6vh;
+	-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+	clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+	z-index: 12;
+}
+/*Divider - Header Style 2*/
+.divider_block > h2 {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: red;
+	font-family: "brandon"
+}
 
 /*IDs*/
 #header_background{
@@ -70,49 +112,25 @@ main {
 }
 /*First Hero Image*/
 #hero_1{
-	background: url(../../assets/images/pictures/CHU_9748.jpg);
-	background-position-x: 35%;
+	background-image: url(../../assets/images/pictures/CHU_9748.jpg);
+	background-position-x: 42%;
 	height: 93vh;
-}
-#hero_1_text{
-	display: block;
-	position: absolute;
-	padding: 2%;
-	top: 60%;
-	right: 50%;
-	transform: translateY(-50%) translateX(50%);
-	background:hsla(0,0%,100%,0.40);
-	color: hsla(0,0%,100%,1.00);
-	font-family: "Avenir Next", "Avenir", sans-serif;
-	font-weight: 200;
-}
-/*First Divider*/
-#divider_1{
-	display: block;
-	position: relative;
-
-}
-/*Shape of First Divider*/
-#divider_1_block{
-	position: absolute;
-	background: hsla(0,0%,100%,1.00);
-	width: 100%;
-	height: 40vh;
-	top: -5.6vh;
-	-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
-	clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
-	z-index: 12;
-}
-/*First Divider - Header Style 2*/
-#divider_1_block > h2 {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	text-align: center;
-	color: red;
+	-webkit-filter: inherit;
+	filter: inherit;
+	-webkit-filter: grayscale(40%);
+	filter: grayscale(40%);
 }
 /*Second Hero Image*/
 #hero_2{
-	background: url(../../assets/images/pictures/EPP_4736.jpg);
+	background-image: url(../../assets/images/pictures/EPP_4736.jpg);
 	top: 24.8vh;
+	-webkit-filter: inherit;
+	filter: inherit;
+	-webkit-filter: hue-rotate(-10deg);
+	filter: hue-rotate(-10deg);
+}
+@-moz-document url-prefix() { 
+  div.hero_image {
+     background-attachment: scroll;
+  }
 }
